@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        gap: 100px;
+      }
+
+      .header {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .racket {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      span {
+        display: block;
+        font-weight: 600;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      input {
+        width: 100px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>tennis market</h1>
+      <p>
+        welcome to tennis market!
+        <br />
+        enjoy your shopping!
+      </p>
+      <a href="">order list</a>
+    </div>
+    <section>
+      <div class="racket">
+        <img src="image/redRacket.png" alt="redRacket" />
+        <span>Red Racket</span>
+        <input
+          type="button"
+          value="order"
+          onclick="location.href='/order?productID=1'"
+        />
+      </div>
+      <div class="racket">
+        <img src="image/blueRacket.png" alt="blueRacket" />
+        <span>Blue Racket</span>
+        <input type="button" value="order" />
+      </div>
+      <div class="racket">
+        <img src="image/blackRacket.png" alt="blackRacket" />
+        <span>Black Racket</span>
+        <input type="button" value="order" />
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
